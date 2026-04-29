@@ -1,0 +1,13 @@
+@echo off
+call conda activate DFFreq
+cd DFFreq-main
+python train.py ^
+    --name wayv_face_detection ^
+    --dataroot ../dataset ^
+    --classes "" ^
+    --batch_size 64 ^
+    --niter 90 ^
+    --lr 0.0002 ^
+    --num_threads 4 ^
+    --gpu_ids 0
+pause
