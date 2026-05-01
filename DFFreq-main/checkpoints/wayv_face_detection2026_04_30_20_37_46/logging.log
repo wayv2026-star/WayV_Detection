@@ -1,0 +1,1 @@
+train.py  --name  wayv_face_detection  --dataroot  C:/Users/blire/OneDrive - ?숈쓽??숆탳/諛뷀깢 ?붾㈃/dataset/train/WayV_Detection_Train  --batch_size  32  --niter  90  --lr  0.0002  --num_threads  4  --gpu_ids  0

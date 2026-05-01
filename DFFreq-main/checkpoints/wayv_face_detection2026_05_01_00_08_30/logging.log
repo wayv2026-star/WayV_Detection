@@ -1,0 +1,9 @@
+train.py  --name  wayv_face_detection  --dataroot  C:/dataset  --train_split  train/WayV_Detection_Train/train  --val_split  val  --batch_size  32  --niter  90  --lr  0.0002  --num_threads  4  --gpu_ids  0
+number of params: 1442442
+cwd: C:\Users\blire\OneDrive - 동의대학교\바탕 화면\WayV_Detection\DFFreq-main
+2026-05-01 00:08:30 Length of data loader: 2250
+2026-05-01 00:11:37 Train loss: 0.6402409672737122 at step: 400 lr 0.0002
+2026-05-01 00:14:25 Train loss: 0.5428736805915833 at step: 800 lr 0.0002
+2026-05-01 00:17:14 Train loss: 0.29796773195266724 at step: 1200 lr 0.0002
+2026-05-01 00:20:04 Train loss: 0.04003381356596947 at step: 1600 lr 0.0002
+2026-05-01 00:22:51 Train loss: 0.2294120341539383 at step: 2000 lr 0.0002

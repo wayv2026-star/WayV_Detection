@@ -1,0 +1,46 @@
+----------------- Options ---------------
+                     arch: resnet50                      
+               batch_size: 32                            	[default: 128]
+                    beta1: 0.9                           
+                blur_prob: 0.5                           
+                 blur_sig: 0.0,3.0                       
+          checkpoints_dir: ./checkpoints                 
+                class_bal: False                         
+                  classes:                               
+           continue_train: False                         
+                 cropSize: 256                           
+                 data_aug: False                         
+                 dataroot: C:/Users/blire/OneDrive - ?숈쓽??숆탳/諛뷀깢 ?붾㈃/dataset/train/WayV_Detection_Train	[default: ./dataset/]
+                delr_freq: 20                            
+                drop_last: True                          
+          earlystop_epoch: 15                            
+              epoch_count: 10                            
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                  isTrain: True                          	[default: None]
+               jpg_method: cv2                           
+                 jpg_prob: 0.5                           
+                 jpg_qual: 30,100                        
+                       kd: True                          
+                kd_weight: 1                             
+               last_epoch: -1                            
+                 loadSize: 256                           
+                loss_freq: 400                           
+                       lr: 0.0002                        	[default: 0.0001]
+                     mode: binary                        
+                     name: wayv_face_detection2026_04_30_20_37_46	[default: experiment_name]
+                new_optim: False                         
+                    niter: 90                            	[default: 101]
+                  no_flip: False                         
+              num_threads: 4                             	[default: 16]
+                    optim: adam                          
+           resize_or_crop: scale_and_crop                
+                rz_interp: bilinear                      
+          save_epoch_freq: 10                            
+         save_latest_freq: 91                            
+           serial_batches: False                         
+                   suffix:                               
+              train_split: train                         
+                val_split: val                           
+----------------- End -------------------

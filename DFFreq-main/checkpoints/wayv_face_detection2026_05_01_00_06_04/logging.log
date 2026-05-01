@@ -1,0 +1,1 @@
+train.py  --name  wayv_face_detection  --dataroot  C:/dataset/train/WayV_Detection_Train
