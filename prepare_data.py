@@ -3,10 +3,10 @@ import os
 import shutil
 import random
 
-TRAIN_REAL = './dataset/train/0_real'
-TRAIN_FAKE = './dataset/train/1_fake'
-VAL_REAL   = './dataset/val/0_real'
-VAL_FAKE   = './dataset/val/1_fake'
+TRAIN_REAL = 'C:/dataset/train/WayV_Detection_Train/train/0_real'
+TRAIN_FAKE = 'C:/dataset/train/WayV_Detection_Train/train/1_fake'
+VAL_REAL   = 'C:/dataset/val/0_real'
+VAL_FAKE   = 'C:/dataset/val/1_fake'
 
 random.seed(42)
 VAL_RATIO = 0.1
