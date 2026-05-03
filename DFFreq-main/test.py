@@ -28,24 +28,11 @@ seed_torch(100)
 
 
 DetectionTests = {
-    'ForenSynths': { 'dataroot': '/home/HDD/yjz/dataset/ForenSynths/test',
-                     'no_resize': False, # Due to the different shapes of images in the dataset, resizing is required during batch detection.
-                     'no_crop': True,
-                   },
-    'UniversalFakeDetect': { 'dataroot': '/home/HDD/yjz/dataset/UniversalFakeDetect',
-                             'no_resize': False, # Due to the different shapes of images in the dataset, resizing is required during batch detection.
-                             'no_crop': True,
-                           },
-    'Genimage': {'dataroot': '/home/HDD/yjz/dataset/Genimage',
-            'no_resize': False,
-            # Due to the different shapes of images in the dataset, resizing is required during batch detection.
-            'no_crop': True,
-            },
-    'AIGIBench': {'dataroot': '/home/HDD/yjz/dataset/AIGIBench',
-            'no_resize': False,
-            # Due to the different shapes of images in the dataset, resizing is required during batch detection.
-            'no_crop': True,
-            },
+    'WayV_Test': {
+        'dataroot': 'C:/dataset/WayV_Detection_Test',
+        'no_resize': False,
+        'no_crop': True,
+    },
 }
 
 # Set up logging
@@ -59,7 +46,8 @@ logger.info(log_msg)
 
 # Get model
 model = resnet50(num_classes=1)
-model.load_state_dict(torch.load(opt.model_path), strict=True)
+state_dict = torch.load(opt.model_path, map_location='cpu')
+model.load_state_dict(state_dict, strict=True)
 model.cuda()
 model.eval()
 
