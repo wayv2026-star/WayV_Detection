@@ -232,6 +232,11 @@
                 });
                 const data = await response.json();
 
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('resultArea').style.display = 'block';
 

@@ -46,6 +46,14 @@ def image_to_base64(img):
 
 @app.post("/detect")
 async def detect(file: UploadFile = File(...)):
+
+    if file.content_type not in ['image/png', 'image/jpeg', 'image/jpg']:
+        return JSONResponse(
+            {"error": "지원하지 않는 파일 형식입니다. PNG, JPG만 가능합니다."},
+            status_code=400
+        )
+
+
     # 이미지 읽기
     contents = await file.read()
     image = Image.open(io.BytesIO(contents)).convert('RGB')
